@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 //import { Car } from 'src/classes/car';
 //import { Employee } from 'src/classes/Employee';
-//import { Gender } from 'src/classes/gender';
 import { Monkey, Pigeon, Zoo } from 'src/classes/zoo';
+import { EmployeeABC } from 'src/classes/employeeabc';
 
 @Component({
   selector: 'app-root',
@@ -16,13 +16,12 @@ export class AppComponent {
 constructor() {
   /*let opel = new Car("Opel");
   let vw = new Car("vw");
-  let employee = new Employee ("furst_name" , "last_name" , "gender"); 
+  let employee = new Employee ("furst_name" , "last_name" ); 
 
   console.log(opel);
   console.log(vw);
   console.log(employee);
-  console.log(gender) */
-
+  
   var zoo = new Zoo();
 
   var monkey1 = new Monkey();
@@ -34,5 +33,10 @@ constructor() {
   zoo.addAnimal(bird1);
 
   zoo.triggerAlarm();
+*/
+  var empABC = new EmployeeABC();
+  empABC.position = "tester";
+  empABC.printPosition();
+    
   }
 }
